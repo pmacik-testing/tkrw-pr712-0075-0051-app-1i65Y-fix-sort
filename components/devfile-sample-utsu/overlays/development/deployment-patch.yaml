@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-utsu
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr712-0075-0051-tenant/tkrw-pr712-0075-0051-app/devfile-sample-utsu@sha256:ff65b0b87c34262d3ee1882aa1685c796980ce4d3db637f27a1de14366429636
+        name: my-nodejs
+        resources: {}
+status: {}
